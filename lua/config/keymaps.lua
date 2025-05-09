@@ -15,6 +15,9 @@ vim.keymap.set('v', '>', '>gv')
 -- Select all
 vim.keymap.set('n', '<C-a>', 'ggVG', opts)
 
+-- Undo
+vim.keymap.set({ 'n', 'v', 'i' }, '<C-z>', '<ESC>u', opts)
+
 -- write file in current directory
 -- :w %:h/<new-file-name>
 vim.keymap.set('n', '<C-n>', ':w %:h/', opts)
