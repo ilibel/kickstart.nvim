@@ -21,3 +21,6 @@ vim.keymap.set({ 'n', 'v', 'i' }, '<C-z>', '<ESC>u', opts)
 -- write file in current directory
 -- :w %:h/<new-file-name>
 vim.keymap.set('n', '<C-n>', ':w %:h/', opts)
+
+-- Copy current file path into the clipboard
+vim.keymap.set('n', '<C-y>f', ":let @+=expand('%')<CR>", opts)
