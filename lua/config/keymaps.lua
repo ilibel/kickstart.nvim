@@ -22,6 +22,9 @@ vim.keymap.set({ 'n', 'v', 'i' }, '<C-z>', '<ESC>u', opts)
 vim.keymap.set({ 'n', 'v', 'i' }, 'H', '^', opts)
 vim.keymap.set({ 'n', 'v', 'i' }, 'L', '$', opts)
 
+-- Switch back to normal mode from the insert mode
+vim.keymap.set('i', 'jk', '<ESC>', { noremap = false })
+
 -- write file in current directory
 -- :w %:h/<new-file-name>
 vim.keymap.set('n', '<C-n>', ':w %:h/', opts)
