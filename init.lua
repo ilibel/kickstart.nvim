@@ -675,7 +675,7 @@ require('lazy').setup({
         -- But for many setups, the LSP (`ts_ls`) will work just fine
         -- ts_ls = {},
         --
-        ruby_lsp = {},
+        -- ruby_lsp = {},
 
         lua_ls = {
           -- cmd = { ... },
