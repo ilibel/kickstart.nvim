@@ -18,6 +18,9 @@ vim.keymap.set('n', '<C-a>', 'ggVG', opts)
 -- Undo
 vim.keymap.set({ 'n', 'v', 'i' }, '<C-z>', '<ESC>u', opts)
 
+-- Redo
+vim.keymap.set({ 'n', 'v', 'i' }, 'U', '<C-r>', opts)
+
 -- Go to Beginning/End of the line
 vim.keymap.set({ 'n', 'v' }, 'H', '^', opts)
 vim.keymap.set({ 'n', 'v' }, 'L', '$', opts)
