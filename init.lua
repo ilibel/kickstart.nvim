@@ -681,7 +681,7 @@ require('lazy').setup({
         -- ts_ls = {},
         --
         -- ruby_lsp = {},
-        kotlin_language_server = {},
+        kotlin_lsp = {},
 
         lua_ls = {
           -- cmd = { ... },
