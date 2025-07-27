@@ -1000,11 +1000,21 @@ require('lazy').setup({
   {
     'nvim-lualine/lualine.nvim',
     dependencies = { 'nvim-tree/nvim-web-devicons' },
-    opts = {
-      options = {
-        theme = 'catppuccin', -- 'vscode', 'auto'
-      },
-    },
+    opts = function()
+      local function project_name()
+        local cwd = vim.fn.getcwd()
+        return ' ' .. vim.fn.fnamemodify(cwd, ':t')
+      end
+
+      return {
+        options = {
+          theme = 'catppuccin', -- 'vscode', 'auto'
+        },
+        sections = {
+          lualine_c = { project_name, 'filename' },
+        },
+      }
+    end,
   },
 
   -- Highlight todo, notes, etc in comments
