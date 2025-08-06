@@ -21,6 +21,9 @@ vim.keymap.set({ 'n', 'v', 'i' }, '<C-z>', '<ESC>u', opts)
 -- Redo
 vim.keymap.set({ 'n', 'v' }, 'U', '<C-r>', opts)
 
+-- Paste without replacing a value in the clipboard
+vim.keymap.set({ 'v' }, '<leader>p', '"_dP', opts)
+
 -- Go to Beginning/End of the line
 vim.keymap.set({ 'n', 'v' }, 'H', '^', opts)
 vim.keymap.set({ 'n', 'v' }, 'L', '$', opts)
