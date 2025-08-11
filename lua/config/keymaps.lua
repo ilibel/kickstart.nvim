@@ -12,9 +12,6 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", opts)
 vim.keymap.set('v', '<', '<gv')
 vim.keymap.set('v', '>', '>gv')
 
--- Select all
-vim.keymap.set('n', '<C-a>', 'ggVG', opts)
-
 -- Undo
 vim.keymap.set({ 'n', 'v', 'i' }, '<C-z>', '<ESC>u', opts)
 
