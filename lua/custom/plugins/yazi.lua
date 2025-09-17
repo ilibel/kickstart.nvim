@@ -6,12 +6,12 @@ return {
       { 'nvim-lua/plenary.nvim', lazy = true },
     },
     keys = {
-      {
-        '\\',
-        mode = { 'n', 'v' },
-        '<cmd>Yazi<cr>',
-        desc = 'Open yazi at the current file',
-      },
+      -- {
+      --   '\\',
+      --   mode = { 'n', 'v' },
+      --   '<cmd>Yazi<cr>',
+      --   desc = 'Open yazi at the current file',
+      -- },
       {
         -- Open in the current working directory
         '<leader>cw',
