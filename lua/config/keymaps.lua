@@ -21,7 +21,7 @@ vim.keymap.set({ 'n', 'v' }, 'U', '<C-r>', opts)
 -- Paste without replacing a value in the clipboard
 vim.keymap.set({ 'v' }, '<leader>p', '"_dP', opts)
 
-vim.keymap.set('n', '<M-Tab>', '<CMD>Telescope buffers sort_mru=true sort_lastused=true initial_mode=normal theme=ivy<CR>', { noremap = true, silent = true })
+vim.keymap.set('n', '<C-Tab>', '<CMD>Telescope buffers sort_mru=true sort_lastused=true initial_mode=normal theme=ivy<CR>', { noremap = true, silent = true })
 
 vim.keymap.set({ 'n', 'v' }, '\\', '<CMD>NvimTreeFindFileToggle!<CR>', opts)
 
